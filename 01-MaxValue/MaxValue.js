@@ -1,4 +1,3 @@
-
 function MaxValue(shares) {
   // Tu código aquí
   let maxGanancia = 0;
@@ -9,7 +8,5 @@ function MaxValue(shares) {
   }
   return maxGanancia;
 }
-
-
 
 module.exports = MaxValue;
