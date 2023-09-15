@@ -1,5 +1,6 @@
+
 function intersection(arr1, arr2) {
-  // Tu código aquí
+  return arr1.filter(item => arr2.includes(item));
 }
 
 module.exports = intersection;
