@@ -24,8 +24,8 @@ describe("SpyOn", function () {
     expect(typeof adderSpy.getCallCount).toBe("function");
   });
 
-  it("La función spy debe poseer el método wasCalledWith", () => {
-    expect(typeof adderSpy.wasCalledWith).toBe("function");
+  it("La función spy debe poseer el método wasCalledWxith", () => {
+    expect(typeof adderSpy.wasCalledWxith).toBe("function");
   });
 
   it("La función spy debe poseer el método returned", () => {
@@ -41,16 +41,16 @@ describe("SpyOn", function () {
     expect(adderSpy.getCallCount()).toBe(3);
   });
 
-  it("El método wasCalledWith debe retornar true si la función spy fue invocada algun vez con el argumento", function () {
+  it("El método wasCalledWxith debe retornar true si la función spy fue invocada algun vez con el argumento", function () {
     adderSpy(2, 3);
-    expect(adderSpy.wasCalledWith(2)).toBe(true);
-    expect(adderSpy.wasCalledWith(3)).toBe(true);
+    expect(adderSpy.wasCalledWxith(2)).toBe(true);
+    expect(adderSpy.wasCalledWxith(3)).toBe(true);
   });
 
-  it("El método wasCalledWith debe retornar false si la función spy nunca fue invocada con el argumento", function () {
+  it("El método wasCalledWxith debe retornar false si la función spy nunca fue invocada con el argumento", function () {
     adderSpy(2, 3);
-    expect(adderSpy.wasCalledWith(4)).toBe(false);
-    expect(adderSpy.wasCalledWith(5)).toBe(false);
+    expect(adderSpy.wasCalledWxith(4)).toBe(false);
+    expect(adderSpy.wasCalledWxith(5)).toBe(false);
   });
 
   it("El método returned debe retornar true si la función spy retornó alguna vez el valor", function () {

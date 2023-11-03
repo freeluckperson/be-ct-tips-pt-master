@@ -4,7 +4,8 @@
   "description": "TIPs Part Time",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Jorge Vega",
   "license": "ISC",
